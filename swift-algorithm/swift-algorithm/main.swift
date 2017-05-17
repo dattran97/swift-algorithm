@@ -8,5 +8,14 @@
 
 import Foundation
 
-print("Hello, World!")
+var list = LinkedList<Int>()
+list.append(1)
+list.append(2)
+list.insert(3, at: 1)
+list.insert(4, at: 1)
+let mapList = list.map { $0 + 1 }
+let filterList = list.filter { $0 > 2 }
 
+print(list.description)
+print(mapList.description)
+print(filterList.description)

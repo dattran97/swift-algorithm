@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4FCD152B1ECC254F00F71B67 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD152A1ECC254F00F71B67 /* main.swift */; };
+		4FCD15691ECC281300F71B67 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD15681ECC281300F71B67 /* Stack.swift */; };
+		4FCD156B1ECC281A00F71B67 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD156A1ECC281A00F71B67 /* Queue.swift */; };
+		4FCD15751ECC28CB00F71B67 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCD15741ECC28CB00F71B67 /* LinkedList.swift */; };
+		4FE2B8601ECCA038008144D4 /* SkipList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE2B85F1ECCA038008144D4 /* SkipList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +29,10 @@
 /* Begin PBXFileReference section */
 		4FCD15271ECC254F00F71B67 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCD152A1ECC254F00F71B67 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		4FCD15531ECC277500F71B67 /* Algorimths */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Algorimths; sourceTree = "<group>"; };
-		4FCD15541ECC277500F71B67 /* DataStructures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DataStructures; sourceTree = "<group>"; };
-		4FCD15551ECC277500F71B67 /* Exercises */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Exercises; sourceTree = "<group>"; };
+		4FCD15681ECC281300F71B67 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		4FCD156A1ECC281A00F71B67 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		4FCD15741ECC28CB00F71B67 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		4FE2B85F1ECCA038008144D4 /* SkipList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkipList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +65,149 @@
 		4FCD15291ECC254F00F71B67 /* swift-algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				4FCD15531ECC277500F71B67 /* Algorimths */,
-				4FCD15541ECC277500F71B67 /* DataStructures */,
-				4FCD15551ECC277500F71B67 /* Exercises */,
+				4FCD156C1ECC282E00F71B67 /* Algorimths */,
+				4FCD155E1ECC27FD00F71B67 /* DataStructures */,
+				4FCD15671ECC27FD00F71B67 /* Exercises */,
 				4FCD152A1ECC254F00F71B67 /* main.swift */,
 			);
 			path = "swift-algorithm";
+			sourceTree = "<group>";
+		};
+		4FCD155E1ECC27FD00F71B67 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				4FCD155F1ECC27FD00F71B67 /* Graphs */,
+				4FCD15601ECC27FD00F71B67 /* Hashing */,
+				4FCD15611ECC27FD00F71B67 /* Lists */,
+				4FCD15621ECC27FD00F71B67 /* Queues */,
+				4FCD15641ECC27FD00F71B67 /* Sets */,
+				4FCD15651ECC27FD00F71B67 /* Trees */,
+				4FCD15661ECC27FD00F71B67 /* VariationsOnArrays */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		4FCD155F1ECC27FD00F71B67 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
+		4FCD15601ECC27FD00F71B67 /* Hashing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Hashing;
+			sourceTree = "<group>";
+		};
+		4FCD15611ECC27FD00F71B67 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				4FCD15741ECC28CB00F71B67 /* LinkedList.swift */,
+				4FE2B85F1ECCA038008144D4 /* SkipList.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		4FCD15621ECC27FD00F71B67 /* Queues */ = {
+			isa = PBXGroup;
+			children = (
+				4FCD15681ECC281300F71B67 /* Stack.swift */,
+				4FCD156A1ECC281A00F71B67 /* Queue.swift */,
+			);
+			path = Queues;
+			sourceTree = "<group>";
+		};
+		4FCD15641ECC27FD00F71B67 /* Sets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sets;
+			sourceTree = "<group>";
+		};
+		4FCD15651ECC27FD00F71B67 /* Trees */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Trees;
+			sourceTree = "<group>";
+		};
+		4FCD15661ECC27FD00F71B67 /* VariationsOnArrays */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VariationsOnArrays;
+			sourceTree = "<group>";
+		};
+		4FCD15671ECC27FD00F71B67 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		4FCD156C1ECC282E00F71B67 /* Algorimths */ = {
+			isa = PBXGroup;
+			children = (
+				4FCD156D1ECC282E00F71B67 /* Compression */,
+				4FCD156E1ECC282E00F71B67 /* MachineLearning */,
+				4FCD156F1ECC282E00F71B67 /* Mathematics */,
+				4FCD15701ECC282E00F71B67 /* Miscellaneous */,
+				4FCD15711ECC282E00F71B67 /* Searching */,
+				4FCD15721ECC282E00F71B67 /* Sorting */,
+				4FCD15731ECC282E00F71B67 /* StringSearch */,
+			);
+			path = Algorimths;
+			sourceTree = "<group>";
+		};
+		4FCD156D1ECC282E00F71B67 /* Compression */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Compression;
+			sourceTree = "<group>";
+		};
+		4FCD156E1ECC282E00F71B67 /* MachineLearning */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MachineLearning;
+			sourceTree = "<group>";
+		};
+		4FCD156F1ECC282E00F71B67 /* Mathematics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mathematics;
+			sourceTree = "<group>";
+		};
+		4FCD15701ECC282E00F71B67 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		4FCD15711ECC282E00F71B67 /* Searching */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Searching;
+			sourceTree = "<group>";
+		};
+		4FCD15721ECC282E00F71B67 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sorting;
+			sourceTree = "<group>";
+		};
+		4FCD15731ECC282E00F71B67 /* StringSearch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StringSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCD15691ECC281300F71B67 /* Stack.swift in Sources */,
+				4FCD156B1ECC281A00F71B67 /* Queue.swift in Sources */,
+				4FCD15751ECC28CB00F71B67 /* LinkedList.swift in Sources */,
 				4FCD152B1ECC254F00F71B67 /* main.swift in Sources */,
+				4FE2B8601ECCA038008144D4 /* SkipList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +404,7 @@
 				4FCD15301ECC254F00F71B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
